@@ -1,23 +1,23 @@
 
-Algoritmo Ventas
+Algoritmo RegistroVentas
 		Definir monto, total Como Real
 		Definir cantidad Como Entero
 		
 		total <- 0
 		cantidad <- 0
 		
-		Escribir "Ingresar el monto de la venta (o 0 para salir):"
+		Escribir "Ingresar monto de la venta ó (0) para CIERRE DE CAJA:"
 		Leer monto
 		
 		Mientras monto <> 0 Hacer
 			Si monto < 0 Entonces
-				Escribir "Error: No se pueden poner números negativos."
+				Escribir "Error: No se pueden ingresar montos negativos."
 			Sino
 				total <- total + monto
 				cantidad <- cantidad + 1
 			FinSi
 			
-			Escribir "Ingrese el siguiente monto (o 0 para salir):"
+			Escribir "Ingresar monto de la venta ó (0) para CIERRE DE CAJA:"
 			Leer monto
 		FinMientras
 		
