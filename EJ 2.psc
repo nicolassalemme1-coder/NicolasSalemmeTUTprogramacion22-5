@@ -1,12 +1,12 @@
-Algoritmo SimuladorTicketCompra
+Algoritmo SimuladorTicketBasico
 	
 	Definir precioUnitario, subtotal, iva, totalPagar Como Real
 	Definir cantidadUnidades Como Entero
 	
-	Escribir "Ingrese el precio unitario del producto:"
+	Escribir "Ingrese precio unitario:"
 	Leer precioUnitario
 	
-	Escribir "Ingrese la cantidad de unidades compradas:"
+	Escribir "Ingrese cantidad:"
 	Leer cantidadUnidades
 	
 	subtotal <- precioUnitario * cantidadUnidades
@@ -14,15 +14,15 @@ Algoritmo SimuladorTicketCompra
 	totalPagar <- subtotal + iva
 	
 	Escribir "===================================="
-	Escribir "          TICKET DE COMPRA          "
+	Escribir "            SU COMPRA               "
 	Escribir "===================================="
 	Escribir "Precio unitario: $", precioUnitario
-	Escribir "Cantidad comprada: ", cantidadUnidades
+	Escribir "Cantidad : ", cantidadUnidades
 	Escribir "------------------------------------"
 	Escribir "Subtotal: $", subtotal
 	Escribir "IVA 21%: $", iva
 	Escribir "------------------------------------"
-	Escribir "Total neto a abonar: $", totalPagar
+	Escribir "Total a abonar: $", totalPagar
 	Escribir "===================================="
 	
 FinAlgoritmo
